@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>El Puesto — La Parrilla Tradicional de Montevideo</title>
+  <meta name="description" content="Parrilla tradicional uruguaya premium en Carrasco, Montevideo. Carnes Angus certificadas, cocina a leña, sala de eventos.">
+  <meta name="theme-color" content="#1A1210">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">El <span>Puesto</span></a>
+  <ul class="nav-links">
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#carta">Carta</a></li>
+    <li><a href="#sala">Eventos</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#ubicacion">Ubicación</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#nosotros" onclick="closeMenu()">Nosotros</a>
+  <a href="#carta" onclick="closeMenu()">Carta</a>
+  <a href="#sala" onclick="closeMenu()">Eventos</a>
+  <a href="#galeria" onclick="closeMenu()">Galería</a>
+  <a href="#ubicacion" onclick="closeMenu()">Ubicación</a>
+  <a href="https://wa.me/59892506368" style="color:var(--green-wpp)" onclick="closeMenu()">Reservar</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-video">
+    <iframe src="https://www.youtube.com/embed/-swSoQIzcwo?autoplay=1&mute=1&loop=1&playlist=-swSoQIzcwo&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&vq=hd720" title="El Puesto" allow="autoplay; encrypted-media" allowfullscreen loading="eager"></iframe>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-pretitle">Carrasco · Montevideo</p>
+    <h1>El Puesto</h1>
+    <div class="hero-line"></div>
+    <p class="tagline">La Parrilla Tradicional de Montevideo</p>
+    <a href="https://wa.me/59892506368?text=Hola!%20Quisiera%20hacer%20una%20reserva" class="hero-cta" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.913.914l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.37 0-4.567-.804-6.313-2.155l-.44-.348-3.166 1.061 1.061-3.166-.348-.44A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Reservar mesa
+    </a>
+  </div>
+  <div class="scroll-hint"><span></span></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="nosotros">
+  <p class="slabel">Desde 2017 en Carrasco</p>
+  <h2 class="stitle">Tradición & Fuego</h2>
+  <div class="sline"></div>
+  <p class="intro">En pleno corazón de Carrasco, sobre la arbolada calle Schroeder, nace <strong>El Puesto</strong>: un tributo a la parrilla uruguaya de siempre. Carnes Angus certificadas por Frigorífico Pando, cocción lenta a leña y el respeto por el producto como filosofía.</p>
+  <div class="features">
+    <div class="feat">
+      <svg class="feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3 4 5.5 4 8.5a4 4 0 11-8 0C8 7.5 11 5 12 2z"/><path d="M8.5 22v-2a3.5 3.5 0 017 0v2"/><line x1="12" y1="16" x2="12" y2="22"/></svg>
+      <h4>Parrilla a Leña</h4>
+      <p>Cocción tradicional</p>
+    </div>
+    <div class="feat">
+      <svg class="feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="10" rx="8" ry="5"/><path d="M4 10v2c0 2.76 3.58 5 8 5s8-2.24 8-5v-2"/><path d="M12 5V3"/><circle cx="12" cy="3" r="1"/></svg>
+      <h4>Angus Certificado</h4>
+      <p>Frigorífico Pando</p>
+    </div>
+    <div class="feat">
+      <svg class="feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 11v11"/><path d="M10 2l2 7h-4l2-7z"/><path d="M7 9h10"/><path d="M7 9c0 2-1 3-2 4"/><path d="M17 9c0 2 1 3 2 4"/></svg>
+      <h4>Carta de Vinos</h4>
+      <p>Selección premium</p>
+    </div>
+    <div class="feat">
+      <svg class="feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14c2 0 3-1.5 3-3.5S19 7 17 7s-3 1.5-3 3.5 1 3.5 3 3.5z"/><path d="M7 14c2 0 3-1.5 3-3.5S9 7 7 7s-3 1.5-3 3.5S5 14 7 14z"/><path d="M7 14v5a2 2 0 002 2h6a2 2 0 002-2v-5"/><line x1="12" y1="7" x2="12" y2="3"/></svg>
+      <h4>Jardín & Terraza</h4>
+      <p>Al aire libre</p>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-section" id="carta">
+  <p class="slabel">Nuestra carta</p>
+  <h2 class="stitle">La Mesa Servida</h2>
+  <div class="sline"></div>
+  <p class="ssub">Parrilla tradicional, cocina regional y postres caseros</p>
+
+  <div class="menu-tabs" id="menuTabs">
+    <button class="mtab active" data-tab="entradas">Entradas</button>
+    <button class="mtab" data-tab="parrilla">La Parrilla</button>
+    <button class="mtab" data-tab="cocina">La Cocina</button>
+    <button class="mtab" data-tab="ensaladas">Ensaladas</button>
+    <button class="mtab" data-tab="postres">Postres</button>
+    <button class="mtab" data-tab="whisky">Whisky</button>
+  </div>
+
+  <!-- ENTRADAS -->
+  <div class="mcat active" data-cat="entradas">
+    <h3 class="mcat-title">Entradas</h3>
+    <p class="mcat-desc">Para compartir y abrir el apetito</p>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Jamón Serrano con Rúcula y Gruyere</div></div><div class="mitem-price">$ 695</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Empanadas Criollas (6)</div></div><div class="mitem-price">$ 620</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Picada Criolla</div><div class="mitem-desc">Fiambres, quesos, olivas y dips</div></div><div class="mitem-price">$ 780</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Bastones de Provoleta (6)</div></div><div class="mitem-price">$ 620</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Croquetas de Papas y Panceta (8)</div></div><div class="mitem-price">$ 570</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Bruschetta Tradicional</div><div class="mitem-desc">Jamón serrano, rúcula y oliva</div></div><div class="mitem-price">$ 560</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Bruschetta Mediterránea</div><div class="mitem-desc">Frutos del mar y salmón</div></div><div class="mitem-price">$ 560</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Bruschetta Vegetariana</div></div><div class="mitem-price">$ 560</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Miniaturas de Pescado</div></div><div class="mitem-price">$ 560</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Calamares a la Romana</div></div><div class="mitem-price">$ 560</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Aros de Cebolla</div></div><div class="mitem-price">$ 390</div></div>
+    <h4 class="subcat">Desde la Parrilla</h4>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Provoleta El Puesto</div><div class="mitem-desc">Panceta, morrón y champignones</div></div><div class="mitem-price">$ 520</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Provoleta Caprese</div><div class="mitem-desc">Tomates secos y albahaca</div></div><div class="mitem-price">$ 485</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Provoleta</div></div><div class="mitem-price">$ 420</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Mollejas</div></div><div class="mitem-price">$ 450</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Chorizo Cantimpalo Cattivelli</div></div><div class="mitem-price">$ 260</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Chorizo Extra Cattivelli</div></div><div class="mitem-price">$ 210</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Morcilla Dulce / Salada</div></div><div class="mitem-price">$ 210</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Morrón Relleno c/ Provolone</div></div><div class="mitem-price">$ 520</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Tortilla Española</div></div><div class="mitem-price">$ 670</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Omelette</div><div class="mitem-desc">Jamón, queso y choclo</div></div><div class="mitem-price">$ 490</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Sopa de Verduras</div></div><div class="mitem-price">$ 420</div></div>
+  </div>
+
+  <!-- PARRILLA -->
+  <div class="mcat" data-cat="parrilla">
+    <h3 class="mcat-title">La Parrilla</h3>
+    <p class="mcat-desc">Frigorífico Pando · Wood Grill · Angus Certificado</p>
+    <div class="mhighlight"><h4>Cortes Seleccionados Angus</h4><p>La mejor carne certificada del Uruguay</p></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Ojo de Bife ANGUS</div><div class="mitem-desc">Baby beef</div></div><div class="mitem-price">$ 925</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Ojo de Bife con Hueso ANGUS</div><div class="mitem-desc">Tomahawk steak</div></div><div class="mitem-price">$ 1.100</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Chuletón ANGUS El Puesto</div><div class="mitem-desc">850g aprox · Tomahawk</div></div><div class="mitem-price">$ 1.780</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Entraña Fina ANGUS</div><div class="mitem-desc">Skirt steak</div></div><div class="mitem-price">$ 810</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Asado Tradicional ANGUS</div><div class="mitem-desc">Short ribs</div></div><div class="mitem-price">$ 820</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Lomo / Tenderloin</div></div><div class="mitem-price">$ 985</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Rack de Cordero</div></div><div class="mitem-price">$ 920</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Brochettes Lomo o Pollo</div></div><div class="mitem-price">$ 895</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Brochettes Vegetales</div></div><div class="mitem-price">$ 860</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Pollo Deshuesado</div></div><div class="mitem-price">$ 630</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Matambrito de Cerdo</div></div><div class="mitem-price">$ 630</div></div>
+    <div class="mhighlight" style="margin-top:24px"><h4>Asado Criollo · Solo con Reserva</h4><p>Experiencia especial para eventos</p></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Asado Criollo 1c. ANGUS</div><div class="mitem-desc">850g aprox</div></div><div class="mitem-price">$ 1.580</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Asado Criollo 1 Costilla</div></div><div class="mitem-price">$ 995</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Asado Criollo Manta ANGUS</div><div class="mitem-desc">Costillar entero · Slow Cooked 4h</div></div><div class="mitem-price">$ 9.200</div></div>
+  </div>
+
+  <!-- COCINA -->
+  <div class="mcat" data-cat="cocina">
+    <h3 class="mcat-title">La Cocina</h3>
+    <p class="mcat-desc">Pastas artesanales, pescados, milanesas</p>
+    <h4 class="subcat subcat-first">Pastas Artesanales</h4>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Sorrentinos Jamón y Mozzarella</div></div><div class="mitem-price">$ 820</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Raviolones Espinaca y Gruyere</div></div><div class="mitem-price">$ 820</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Raviolones de Calabaza</div></div><div class="mitem-price">$ 820</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Raviolones de Salmón</div></div><div class="mitem-price">$ 960</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Tagliatelles</div><div class="mitem-desc">Salsas: Carusso, Filetto, Rosa, El Puesto, 4 Quesos</div></div><div class="mitem-price">$ 790</div></div>
+    <h4 class="subcat">Pescados</h4>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Salmón Grillé</div></div><div class="mitem-price">$ 980</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Abadejo Grillé</div></div><div class="mitem-price">$ 890</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Róbalo Blanco</div></div><div class="mitem-price">$ 890</div></div>
+    <h4 class="subcat">Milanesas</h4>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Milanesa Entraña ANGUS c/ Fritas</div></div><div class="mitem-price">$ 910</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Milanesa de Carne c/ Fritas</div></div><div class="mitem-price">$ 880</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Milanesa de Pollo c/ Fritas</div></div><div class="mitem-price">$ 780</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Napolitana Carne o Pollo c/ Fritas</div></div><div class="mitem-price">$ 980</div></div>
+    <h4 class="subcat">Cerdo & Pollo</h4>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Costilla Ahumada / Kassler</div></div><div class="mitem-price">$ 980</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Strogonoff de Pollo</div></div><div class="mitem-price">$ 910</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Strogonoff de Lomo</div></div><div class="mitem-price">$ 920</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Wok de Pollo</div></div><div class="mitem-price">$ 910</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Pollo al Ajillo</div></div><div class="mitem-price">$ 910</div></div>
+    <h4 class="subcat">Vegano & Gluten Free</h4>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Milanesa de Soja c/g</div></div><div class="mitem-price">$ 810</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Filete de Tofu c/g</div></div><div class="mitem-price">$ 810</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Wok de Tofu</div></div><div class="mitem-price">$ 910</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Raviolones Artesanales</div></div><div class="mitem-price">$ 920</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Pasta Artesanal (GF)</div></div><div class="mitem-price">$ 920</div></div>
+  </div>
+
+  <!-- ENSALADAS -->
+  <div class="mcat" data-cat="ensaladas">
+    <h3 class="mcat-title">Ensaladas & Acompañamientos</h3>
+    <p class="mcat-desc">Guarniciones para complementar</p>
+    <h4 class="subcat subcat-first">Ensaladas</h4>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Verde Serrano</div><div class="mitem-desc">Verdes mix y jamón serrano</div></div><div class="mitem-price">$ 450 / 750</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Verde c/ Parmesano</div></div><div class="mitem-price">$ 350 / 580</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Fresca Tradicional</div></div><div class="mitem-price">$ 350 / 580</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Fresca de Palta</div><div class="mitem-desc">Palta, zanahoria, cherry y semillas</div></div><div class="mitem-price">$ 480 / 760</div></div>
+    <h4 class="subcat">Guarniciones</h4>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Papas Noisette</div></div><div class="mitem-price">$ 390</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Papas Noisette c/ Champignones</div></div><div class="mitem-price">$ 540</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Papas Fritas</div></div><div class="mitem-price">$ 390</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Boniatos Fritos</div></div><div class="mitem-price">$ 450</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Puré Manzana</div></div><div class="mitem-price">$ 410</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Caprese</div></div><div class="mitem-price">$ 560</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Papa al Plomo</div></div><div class="mitem-price">$ 380</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Calabaza al Plomo</div></div><div class="mitem-price">$ 380</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Boniato Asado</div></div><div class="mitem-price">$ 380</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Morrón Asado</div></div><div class="mitem-price">$ 380</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Papas a la Suiza / Rösti</div></div><div class="mitem-price">$ 690</div></div>
+    <h4 class="subcat">Salsas</h4>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Salsa de Puerros</div></div><div class="mitem-price">$ 195</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Salsa de Roquefort</div></div><div class="mitem-price">$ 195</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Manteca Negra c/ Alcaparras</div></div><div class="mitem-price">$ 195</div></div>
+  </div>
+
+  <!-- POSTRES -->
+  <div class="mcat" data-cat="postres">
+    <h3 class="mcat-title">Postres Dulces</h3>
+    <p class="mcat-desc">Los típicos uruguayos y más</p>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Panqueque de Dulce de Leche</div></div><div class="mitem-price">$ 510</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Flan Casero c/ DDL o Crema</div></div><div class="mitem-price">$ 450</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Martín Fierro</div><div class="mitem-desc">Dulce de membrillo con queso</div></div><div class="mitem-price">$ 390</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Panqueque de Manzana</div></div><div class="mitem-price">$ 510</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Panqueque Manzana c/ Helado</div></div><div class="mitem-price">$ 560</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Tarta de Manzana c/ Helado</div></div><div class="mitem-price">$ 460</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Brownie de Chocolate c/ Helado</div></div><div class="mitem-price">$ 490</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Brownie Doble c/ DDL y Crema</div></div><div class="mitem-price">$ 590</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Petit Volcán de Chocolate</div></div><div class="mitem-price">$ 480</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Helado Artesanal (2 bochas)</div></div><div class="mitem-price">$ 390</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Ensalada de Fruta</div></div><div class="mitem-price">$ 390</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Tortas</div></div><div class="mitem-price">$ 490</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Helado KETO</div></div><div class="mitem-price">$ 550</div></div>
+  </div>
+
+  <!-- WHISKY -->
+  <div class="mcat" data-cat="whisky">
+    <h3 class="mcat-title">Whisky Club</h3>
+    <p class="mcat-desc">Le guardamos su botella hasta la próxima visita</p>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">JW Black Label</div></div><div class="mitem-price">$ 3.300</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">JW Green Label</div></div><div class="mitem-price">$ 5.700</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">JW Gold Label Reserve</div></div><div class="mitem-price">$ 5.550</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">JW Platinum Label</div></div><div class="mitem-price">$ 8.100</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">JW Blue Label</div></div><div class="mitem-price">$ 20.800</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">JW King George V</div><div class="mitem-desc">Solo con reserva</div></div><div class="mitem-price">$ 73.000</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">The John Walker</div><div class="mitem-desc">Solo con reserva</div></div><div class="mitem-price">$ 185.000</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Chivas Regal 12 años</div></div><div class="mitem-price">$ 3.500</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Chivas Regal 18 años</div></div><div class="mitem-price">$ 7.120</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Jack Daniel's</div></div><div class="mitem-price">$ 3.200</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Buchanan's 12 años</div></div><div class="mitem-price">$ 3.700</div></div>
+    <div class="mitem"><div class="mitem-info"><div class="mitem-name">Glenfiddich 12 años</div></div><div class="mitem-price">$ 6.500</div></div>
+  </div>
+</section>
+
+<!-- PROMOS -->
+<section class="promos">
+  <div class="promos-grid">
+    <div class="promo-card">
+      <h3>Menú Express</h3>
+      <div class="promo-price">$ 980</div>
+      <p>Plato principal, panera, bebida, postre o café.<br>Lun a Vie · 12:00 a 16:00h</p>
+    </div>
+    <div class="promo-card">
+      <h3>Happy Hour</h3>
+      <div class="promo-price">2×1</div>
+      <p>Tragos · Cerveza · Vino.<br>Lun a Sáb · 18:00 a 21:00h<br>Primer trago con tapas de cortesía</p>
+    </div>
+    <div class="promo-card">
+      <h3>En la Barra</h3>
+      <div class="promo-price">desde $ 480</div>
+      <p>Sándwich de entraña ANGUS $710<br>Jamón serrano y queso $710<br>Chorizo al pan $480</p>
+    </div>
+  </div>
+</section>
+
+<!-- SALA SCHROEDER -->
+<section class="sala" id="sala">
+  <div class="sala-inner">
+    <div class="sala-video">
+      <iframe src="https://www.youtube.com/embed/3wrZinvA7K8?controls=1&modestbranding=1&rel=0&playsinline=1" title="Sala Schroeder" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="sala-text">
+      <p class="slabel">Reuniones & Conferencias</p>
+      <h2 class="stitle" style="text-align:inherit">Sala Schroeder</h2>
+      <div class="sline sala-line" style="margin-left:auto;margin-right:auto"></div>
+      <p class="sala-desc">Una sala pensada para que no te falte nada. Ubicada en la planta alta del restaurante, con terraza exclusiva, vista al jardín y la mejor gastronomía de El Puesto.</p>
+      <div class="sala-features">
+        <div class="sala-feat">
+          <svg class="sf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <span>20 a 100 personas</span>
+        </div>
+        <div class="sala-feat">
+          <svg class="sf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+          <span>Proyector & Audio</span>
+        </div>
+        <div class="sala-feat">
+          <svg class="sf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c-4 0-8-2-8-6V4l8-2 8 2v12c0 4-4 6-8 6z"/><path d="M12 2v20"/><path d="M4 7c2 1 5 2 8 2s6-1 8-2"/></svg>
+          <span>Terraza exclusiva</span>
+        </div>
+        <div class="sala-feat">
+          <svg class="sf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          <span>Catering parrilla</span>
+        </div>
+      </div>
+      <p class="sala-uses">Corporativos · cumpleaños · lanzamientos · conferencias · celebraciones</p>
+      <div style="text-align:center">
+        <a href="https://wa.me/59892506368?text=Hola!%20Quisiera%20consultar%20por%20la%20Sala%20Schroeder%20para%20un%20evento" class="sala-cta" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.913.914l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.37 0-4.567-.804-6.313-2.155l-.44-.348-3.166 1.061 1.061-3.166-.348-.44A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Consultar disponibilidad
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<!--
+  ============================================================
+  CÓMO AGREGAR TUS FOTOS:
+  ============================================================
+  Reemplazá cada src="https://images.unsplash.com/..." con la
+  ruta de tus fotos reales. Opciones:
+
+  1) FOTOS EN LA MISMA CARPETA:
+     src="fotos/asado.jpg"
+     (creá una carpeta "fotos" junto al HTML)
+
+  2) FOTOS SUBIDAS A UN HOSTING (recomendado):
+     Subí las fotos a Cloudinary, Imgur, o el hosting del sitio
+     y usá la URL completa:
+     src="https://tu-hosting.com/fotos/asado.jpg"
+
+  3) FOTOS DESDE INSTAGRAM:
+     No se recomienda linkear directo desde IG porque bloquean
+     los hotlinks. Mejor descargar las fotos y subirlas.
+
+  Tamaños recomendados:
+  - Foto grande (primera): 1200x600px mínimo
+  - Fotos cuadradas: 600x600px mínimo
+  - Formato: .jpg o .webp (más liviano)
+  - Peso: menos de 200kb cada una idealmente
+  ============================================================
+-->
+<section class="gallery" id="galeria">
+  <p class="slabel">@elpuesto.uruguay</p>
+  <h2 class="stitle">La Experiencia</h2>
+  <div class="sline"></div>
+  <p class="ssub">Seguinos en Instagram · 30K seguidores</p>
+  <div class="gallery-grid">
+    <a href="https://www.instagram.com/elpuesto.uruguay/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1558030006-450675393462?w=800&q=80" alt="Parrilla El Puesto" loading="lazy"></a>
+    <a href="https://www.instagram.com/elpuesto.uruguay/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="Cortes de carne" loading="lazy"></a>
+    <a href="https://www.instagram.com/elpuesto.uruguay/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80" alt="Platos" loading="lazy"></a>
+    <a href="https://www.instagram.com/elpuesto.uruguay/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80" alt="Ambiente" loading="lazy"></a>
+    <a href="https://www.instagram.com/sala_schroeder/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&q=80" alt="Salón" loading="lazy"></a>
+  </div>
+  <div class="ig-link"><a href="https://www.instagram.com/elpuesto.uruguay/" target="_blank" rel="noopener">Ver más en Instagram</a></div>
+</section>
+
+<!-- MAP -->
+<section class="map-section" id="ubicacion">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.8!2d-56.0565!3d-34.875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f802b6ba5f6f7%3A0x4a6db3f6b2c8e3d1!2sDr.%20Alejandro%20Schroeder%206415%2C%2011500%20Montevideo!5e0!3m2!1ses!2suy!4v1700000000000!5m2!1ses!2suy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación"></iframe>
+  <div class="map-info">
+    <h3>Encontranos</h3>
+    <p>Dr. Alejandro Schroeder 6415 · Carrasco<br>Montevideo 11500, Uruguay</p>
+    <p>Tel. <a href="tel:+59826009520">2600 9520</a> · Wpp <a href="https://wa.me/59892506368">092 506 368</a></p>
+    <p><a href="mailto:reservas@elpuesto.uy">reservas@elpuesto.uy</a></p>
+    <p style="margin-top:6px;font-size:.76rem;color:var(--smoke)">Todos los días · 09:30 a 00:00</p>
+  </div>
+</section>
+
+<!-- WPP FLOAT -->
+<a href="https://wa.me/59892506368?text=Hola!%20Quisiera%20hacer%20una%20reserva%20en%20El%20Puesto" class="wpp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 00.913.914l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.37 0-4.567-.804-6.313-2.155l-.44-.348-3.166 1.061 1.061-3.166-.348-.44A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">El <span>Puesto</span></div>
+  <p class="footer-tag">La Parrilla Tradicional de Montevideo</p>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/elpuesto.uruguay/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+    <a href="https://www.instagram.com/sala_schroeder/" target="_blank" rel="noopener" aria-label="Sala Schroeder"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+    <a href="https://www.facebook.com/elpuestopa/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+  </div>
+  <div class="footer-info">
+    <p>Dr. Alejandro Schroeder 6415 · Carrasco, Montevideo</p>
+    <p>Tel. <a href="tel:+59826009520">2600 9520</a> · Wpp <a href="https://wa.me/59892506368">092 506 368</a></p>
+    <p>Todos los días · 09:30 a 00:00</p>
+    <p>Servicio de mesa $198 · Precio IVA incluido</p>
+  </div>
+  <p class="footer-copy">© 2026 El Puesto. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
